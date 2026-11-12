@@ -1,0 +1,19 @@
+{
+  "name": "حساب ویرا — مدیریت مالی فروشگاه",
+  "short_name": "حساب ویرا",
+  "description": "ثبت فاکتور فروش، پرونده مشتری و داشبورد مالی در یک فضای کاری فارسی و امن.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "fa",
+  "background_color": "#f5f3ec",
+  "theme_color": "#0b3b2e",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

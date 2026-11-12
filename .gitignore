@@ -1,0 +1,10 @@
+.env.local
+node_modules
+dist
+src/convex/_generated
+
+# Local configuration and build metadata
+.env
+.env.*
+!.env.example
+*.tsbuildinfo

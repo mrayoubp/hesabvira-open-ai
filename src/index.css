@@ -1,0 +1,615 @@
+/* DO NOT CHANGE */
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+/* DO NOT CHANGE */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* HESAB VIRA design tokens */
+  --font-sans: "Vazirmatn", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Vazirmatn", ui-monospace, SFMono-Regular,
+    monospace;
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-soft: var(--brand-soft);
+  --color-cream: var(--cream);
+  --color-mist: var(--mist);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-hairline: var(--hairline);
+  --color-surface: var(--surface);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger-soft: var(--danger-soft);
+}
+
+/* Accounting workspace design system 2.0 — ivory, emerald, muted gold. */
+:root,
+.light {
+  --radius: 0.875rem;
+  color-scheme: light;
+
+  --background: #f5f3ec;
+  --foreground: #18222c;
+
+  --card: #fffdf8;
+  --card-foreground: #18222c;
+  --popover: #fffdf8;
+  --popover-foreground: #18222c;
+
+  --primary: #0f513f;
+  --primary-foreground: #fbf8ee;
+  --secondary: #ebe5d7;
+  --secondary-foreground: #243038;
+
+  --muted: #f0ede5;
+  --muted-foreground: #68737c;
+  --accent: #e4ede7;
+  --accent-foreground: #0f513f;
+  --destructive: #ae4a42;
+
+  --border: #e4dfd3;
+  --input: #d9d3c5;
+  --ring: #0f513f;
+
+  --brand: #0f513f;
+  --brand-deep: #083a2d;
+  --brand-soft: #e4efe8;
+  --cream: #eee8d8;
+  --mist: #e8edf1;
+  --gold: #b8934d;
+  --gold-soft: #f4ead4;
+  --ink: #18222c;
+  --ink-soft: #68737c;
+  --hairline: #e4dfd3;
+  --surface: #fffdf8;
+  --success: #2f7d63;
+  --warning: #b7791f;
+  --danger-soft: #f7e8e5;
+
+  --chart-1: #0f513f;
+  --chart-2: #b8934d;
+  --chart-3: #4b8c78;
+  --chart-4: #5e7185;
+  --chart-5: #b06a4f;
+
+  --sidebar: #0b3b2e;
+  --sidebar-foreground: #f4efe2;
+  --sidebar-primary: #f4efe2;
+  --sidebar-primary-foreground: #0b3b2e;
+  --sidebar-accent: #174b3c;
+  --sidebar-accent-foreground: #f4efe2;
+  --sidebar-border: rgba(255, 253, 248, 0.12);
+  --sidebar-ring: #c7a860;
+
+  --shadow-soft:
+    0 1px 2px rgba(24, 34, 44, 0.03),
+    0 18px 42px -30px rgba(24, 34, 44, 0.18);
+  --shadow-lift:
+    0 2px 4px rgba(24, 34, 44, 0.04),
+    0 32px 70px -38px rgba(15, 81, 63, 0.24);
+}
+
+.dark {
+  --background: #0c1411;
+  --foreground: #eee9dc;
+  --card: #111e19;
+  --card-foreground: #eee9dc;
+  --popover: #14221c;
+  --popover-foreground: #eee9dc;
+  --primary: #65a88f;
+  --primary-foreground: #08130f;
+  --secondary: #22332b;
+  --secondary-foreground: #eee9dc;
+  --muted: #18261f;
+  --muted-foreground: #9aa99f;
+  --accent: #1b3a2f;
+  --accent-foreground: #d9e8df;
+  --destructive: #d97970;
+  --border: #26362e;
+  --input: #30443a;
+  --ring: #65a88f;
+
+  --brand: #69ad92;
+  --brand-deep: #061d16;
+  --brand-soft: #173228;
+  --cream: #1c2b24;
+  --mist: #1b3037;
+  --gold: #d2b778;
+  --gold-soft: #352c1d;
+  --ink: #eee9dc;
+  --ink-soft: #9aa99f;
+  --hairline: #26362e;
+  --surface: #111e19;
+  --success: #70b89c;
+  --warning: #d9a95f;
+  --danger-soft: #37211f;
+
+  --chart-1: #69ad92;
+  --chart-2: #d2b778;
+  --chart-3: #4c8a74;
+  --chart-4: #8398ab;
+  --chart-5: #bc8269;
+
+  --sidebar: #081712;
+  --sidebar-foreground: #eee9dc;
+  --sidebar-primary: #d2b778;
+  --sidebar-primary-foreground: #081712;
+  --sidebar-accent: #10271e;
+  --sidebar-accent-foreground: #eee9dc;
+  --sidebar-border: #1e3127;
+  --sidebar-ring: #d2b778;
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35), 0 20px 45px -28px rgba(0, 0, 0, 0.6);
+  --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.4), 0 30px 60px -30px rgba(0, 0, 0, 0.7);
+
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01" 1, "tnum" 1;
+    text-rendering: optimizeLegibility;
+    background-image:
+      radial-gradient(
+        720px 380px at 92% -12%,
+        color-mix(in oklab, var(--brand) 4%, transparent),
+        transparent 66%
+      ),
+      radial-gradient(
+        650px 360px at 3% 4%,
+        color-mix(in oklab, var(--gold) 5%, transparent),
+        transparent 68%
+      ),
+      linear-gradient(180deg, #faf8f2 0%, var(--background) 48%, #f4f1e9 100%);
+    background-attachment: fixed;
+  }
+  .dark body {
+    background-image:
+      radial-gradient(
+        720px 380px at 92% -12%,
+        color-mix(in oklab, var(--brand) 7%, transparent),
+        transparent 66%
+      ),
+      radial-gradient(
+        650px 360px at 3% 4%,
+        color-mix(in oklab, var(--gold) 4%, transparent),
+        transparent 68%
+      ),
+      linear-gradient(180deg, #0e1813 0%, var(--background) 48%, #0b1310 100%);
+  }
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--gold-soft);
+    color: var(--ink);
+  }
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.025em;
+  }
+  body,
+  button,
+  input,
+  textarea,
+  select {
+    font-family: var(--font-sans);
+  }
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+  :focus-visible {
+    outline: 2px solid color-mix(in oklab, var(--brand) 65%, transparent);
+    outline-offset: 3px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--ink-soft) 26%, transparent);
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-clip: content-box;
+  }
+}
+
+@layer utilities {
+  .num {
+    font-family: var(--font-sans);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0.01em;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+
+  .page-enter {
+    animation: page-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .sidebar-sheen {
+    background-image:
+      radial-gradient(130% 80% at 100% 0%, rgba(255, 255, 255, 0.08), transparent 55%),
+      linear-gradient(180deg, #0d4335 0%, #0a372b 55%, #082c23 100%);
+  }
+
+  .page-masthead {
+    background-image:
+      radial-gradient(90% 130% at 100% -20%, rgba(184, 147, 77, 0.12), transparent 55%),
+      radial-gradient(80% 120% at 0% 0%, rgba(15, 81, 63, 0.08), transparent 60%),
+      linear-gradient(135deg, #fffdf8 0%, #faf7ef 58%, #f1f4ef 100%);
+  }
+
+  .dark .page-masthead {
+    background-image:
+      radial-gradient(90% 130% at 100% -20%, rgba(210, 183, 120, 0.08), transparent 55%),
+      radial-gradient(80% 120% at 0% 0%, rgba(105, 173, 146, 0.08), transparent 60%),
+      linear-gradient(135deg, #111e19 0%, #0f1b16 58%, #10241c 100%);
+  }
+
+  .surface-grain {
+    background-image: radial-gradient(rgba(24, 34, 44, 0.06) 0.6px, transparent 0.6px);
+    background-size: 18px 18px;
+  }
+
+  .dark .surface-grain {
+    background-image: radial-gradient(rgba(238, 233, 220, 0.045) 0.6px, transparent 0.6px);
+  }
+
+  .metric-rule {
+    background: linear-gradient(90deg, var(--brand), color-mix(in oklab, var(--gold) 85%, var(--brand)));
+  }
+
+  @keyframes page-in {
+    from {
+      opacity: 0;
+      transform: translateY(7px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .page-enter {
+      animation: none;
+    }
+  }
+
+  .terminal-label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+  }
+
+  /* Retained name, restyled as an airy page texture. */
+  .terminal-grid {
+    background-image:
+      linear-gradient(
+        to left,
+        color-mix(in oklab, var(--brand) 6%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--brand) 6%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 44px 44px;
+    background-position: center;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+  }
+
+  .terminal-dots {
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--brand) 18%, transparent) 1px,
+      transparent 1px
+    );
+    background-size: 14px 14px;
+  }
+
+  .panel-shadow {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-lift {
+    box-shadow: var(--shadow-lift);
+  }
+
+  .glass {
+    background: color-mix(in oklab, var(--surface) 94%, transparent);
+    border: 1px solid color-mix(in oklab, var(--hairline) 84%, transparent);
+    backdrop-filter: blur(14px) saturate(1.05);
+    -webkit-backdrop-filter: blur(14px) saturate(1.05);
+  }
+
+  .dark .glass {
+    background: color-mix(in oklab, var(--card) 92%, transparent);
+    border-color: color-mix(in oklab, white 8%, transparent);
+  }
+
+  .sidebar-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 253, 248, 0.16) transparent;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 253, 248, 0.15);
+    border: 0;
+    border-radius: 999px;
+    background-clip: border-box;
+  }
+
+  .bg-aurora {
+    background:
+      radial-gradient(
+        60% 55% at 78% 18%,
+        color-mix(in oklab, var(--mist) 85%, transparent),
+        transparent 70%
+      ),
+      radial-gradient(
+        52% 48% at 12% 8%,
+        color-mix(in oklab, var(--cream) 95%, transparent),
+        transparent 72%
+      ),
+      radial-gradient(
+        40% 35% at 62% 92%,
+        color-mix(in oklab, var(--gold) 16%, transparent),
+        transparent 75%
+      );
+  }
+
+  .text-gradient-brand {
+    background: linear-gradient(
+      120deg,
+      var(--brand) 10%,
+      #35755f 55%,
+      var(--brand-deep) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(120deg, #9d7c34, var(--gold), #d9c08a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .depth-grid {
+    background-image:
+      linear-gradient(
+        to left,
+        color-mix(in oklab, var(--brand) 22%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--brand) 22%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 54px 54px;
+    mask-image: radial-gradient(ellipse at center, black 5%, transparent 68%);
+  }
+
+  .noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 62%, transparent 100%);
+  }
+
+  .animate-float-slow {
+    animation: hv-float 7s ease-in-out infinite;
+  }
+
+  .animate-float-slower {
+    animation: hv-float 9.5s ease-in-out infinite reverse;
+  }
+
+  .animate-shimmer {
+    background-size: 200% 100%;
+    animation: hv-shimmer 8s linear infinite;
+  }
+
+  @keyframes hv-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes hv-shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  .cursor-blink::after {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 1em;
+    margin-inline-start: 0.25em;
+    background: var(--brand);
+    vertical-align: -0.15em;
+    animation: hv-blink 1.2s steps(2, start) infinite;
+  }
+
+  @keyframes hv-blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float-slow,
+    .animate-float-slower,
+    .animate-shimmer {
+      animation: none;
+    }
+  }
+}
+
+/*
+ * Accounting print / PDF layout.
+ * Browser "Save as PDF" is the PDF exporter; only .print-sheet is rendered.
+ */
+@media print {
+  @page {
+    size: A4;
+    margin: 11mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #26352e !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .print-sheet,
+  .print-sheet * {
+    visibility: visible;
+  }
+
+  .print-sheet {
+    --background: #ffffff;
+    --card: #ffffff;
+    --foreground: #26352e;
+    --ink: #26352e;
+    --ink-soft: #66726a;
+    --hairline: #dedacb;
+    --brand: #245c49;
+    --brand-deep: #173d32;
+    --brand-soft: #e4ece5;
+    --gold: #c5a45b;
+    --gold-soft: #f3ead6;
+    --cream: #e9e5d5;
+    --muted: #efeee5;
+    --mist: #d9eaf2;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    color: #26352e !important;
+    color-scheme: light;
+  }
+
+  .print-sheet .overflow-x-auto,
+  .print-sheet .overflow-y-auto {
+    overflow: visible !important;
+  }
+
+  .print-sheet table {
+    min-width: 0 !important;
+    width: 100% !important;
+    font-size: 8pt !important;
+    page-break-inside: auto;
+  }
+
+  .print-sheet tr {
+    page-break-inside: avoid;
+  }
+
+  .print-sheet thead {
+    display: table-header-group;
+  }
+
+  .print-sheet a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .print-sheet .shadow-sm,
+  .print-sheet .shadow-xl,
+  .print-sheet .shadow-2xl {
+    box-shadow: none !important;
+  }
+}
+
